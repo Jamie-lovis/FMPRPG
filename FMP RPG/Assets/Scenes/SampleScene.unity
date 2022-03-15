@@ -4422,7 +4422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159112, guid: e608e3bb17dc020489835bb64f6bf570, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450670, guid: e608e3bb17dc020489835bb64f6bf570, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4533,9 +4533,23 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: c59994678172f72458d6bd93a473255b, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &1586620381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586620379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2c67c2ac873804e8ae8eacedee67ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheSword: {fileID: 1586620379}
+  SwordStatus: 0
 --- !u!1 &1629079470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb0916e1417161d4e957eba9e23497d9, type: 3}
@@ -4613,6 +4627,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5c1d4092190cf824fb95081c2e65e2de, type: 3}
       propertyPath: m_Name
       value: Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c1d4092190cf824fb95081c2e65e2de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c1d4092190cf824fb95081c2e65e2de, type: 3}

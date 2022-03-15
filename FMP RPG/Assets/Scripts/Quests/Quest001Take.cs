@@ -21,6 +21,7 @@ public class Quest001Take : MonoBehaviour
 	{
 		if (TheDistance <= 3)
 		{
+			AttackBlocker.BlockSword = 1;
 			ActionDisplay.SetActive(true);
 			ActionText.SetActive(true);
 		}
@@ -29,6 +30,7 @@ public class Quest001Take : MonoBehaviour
 		{
 			if (TheDistance <= 3)
 			{
+				AttackBlocker.BlockSword = 2;
 				Screen.lockCursor = false;
 				Cursor.visible = true;
 				ActionDisplay.SetActive(false);
@@ -42,6 +44,7 @@ public class Quest001Take : MonoBehaviour
 
 	void OnMouseExit()
 	{
+		AttackBlocker.BlockSword = 0;
 		ActionDisplay.SetActive(false);
 		ActionText.SetActive(false);
 	}
